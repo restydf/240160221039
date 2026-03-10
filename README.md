@@ -1,6 +1,6 @@
 # SI-IV-B
 
-### Pemrograman Berbasis Web — Front End
+## Pemrograman Berbasis Web — Front End
 
 Repository ini digunakan untuk **pengumpulan tugas praktikum mahasiswa** pada mata kuliah **Pemrograman Berbasis Web (Front-End)**.
 
@@ -10,7 +10,7 @@ Repository ini digunakan untuk **pengumpulan tugas praktikum mahasiswa** pada ma
 
 ---
 
-## 📊 Repository Status
+# 📊 Repository Status
 
 <p align="left">
 <img src="https://komarev.com/ghpvc/?username=SI-IV-B&color=blueviolet">
