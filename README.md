@@ -1,5 +1,5 @@
 # SI-IV-B
-Repository Pemrograman Berbasis Web Front End
+Repository **Pemrograman Berbasis Web – Front End**
 
 <p align="left">
 <a href="#"><img src="https://komarev.com/ghpvc/?username=SI-IV-B&color=blueviolet"></a>
@@ -8,64 +8,156 @@ Repository Pemrograman Berbasis Web Front End
 <a href="#"><img src="https://img.shields.io/github/commit-activity/w/PBWFEND/SI-IV-B?style=flat-square"></a>
 </p>
 
-#### Rabu, 🕐 14:00 s.d 16:30
+📅 **Jadwal Perkuliahan**  
 
-## Alur Pengumpulan Tugas ke Repositori Ini
+    Rabu, 14:00 – 16:30
 
-0. **Fork** repositori ini.
-1. Pada hasil _fork_ anda, buat **branch** dengan nama **NIM** anda.
-2. Pada _branch_ **NIM** anda, buat direktori dengan nama **NIM** anda.
-3. Di dalam direktori **NIM** anda, buat subdirektori dengan nama _**Praktikum #n**_.
-    > _Contoh: **Praktikum #01** untuk tugas pada praktikum pertemuan pertama_
-4. Seluruh berkas **tugas hasil praktikum** disimpan pada direktori **NIM_ANDA**.
-    > - Berkas tugas berupa `(source code)` selama mengerjakan praktikum.
+---
 
-Contoh struktur direktori sebagai berikut:
+# 📥 Alur Pengumpulan Tugas
 
-     .
-     ├── ...
-     ├── A2.2000104                # Nama Direktori
-     │   ├── Praktikum #01         # Subdirektori hasil praktikum #01
-     │   ├── Praktikum #02         # Subdirektori hasil praktikum #02
-     │   ├── Praktikum #03         # dan seterusnya...
-     │   └── README.md             # ini sebagai catatan (aturan penulisan menggunakan format Markdown
-     └── ...
+Ikuti langkah-langkah berikut untuk mengumpulkan tugas praktikum ke repositori ini.
 
-5. **Push** berkas tugas anda ke repositori hasil _fork_ pada _branch_ **NIM** anda.
-6. Buat **Pull Request** untuk **merge** _branch_ **NIM** dengan _branch_ **master** pada repositori ini.
-7. Tugas anda dinyatakan **diterima** jika **branch NIM** anda telah _**merged**_ dengan **branch master** repositori ini.
+### 1. Fork Repository
 
-## Bagaimana Cara Mengetahui Jika **Branch NIM** telah _**Merged**_ dengan Repositori ini?
+Lakukan **fork** terhadap repository ini ke akun GitHub masing-masing.
 
-- Anda dapat memantau repositori ini.
-- Atau tambahkan **remote** ke repositori ini sebagai **upstream** pada repositori lokal hasil _fork_ anda.
-- Jika anda menambahkan _remote_ pada hasil _fork_, lakukan **merge** pada _branch_ **master** anda dengan _branch_ **master upstream**.
-- Untuk cara sinkronisasi hasil _fork_ dengan _upstream_, silakan baca [Configure a remote for a fork](https://help.github.com/en/articles/configuring-a-remote-for-a-fork) dan [Syncing a fork](https://help.github.com/en/articles/syncing-a-fork).
+### 2. Buat Branch
 
-## Modul Praktikum 👁‍🗨
+Pada repository hasil fork, buat **branch baru** dengan nama **NIM Anda**.
 
-- [Modul Praktikum :octocat:](https://github.com/PBWFEND/Modul-Praktikum)
+Contoh:
 
-## Contributors ✨
+```
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<!-- Jika anda ingin memasukkan profil di list contributor: cantumkan NAMA LENGKAP, FOTO ASLI & LINK REPOSITORI ANDA kemudian mengirim pull request -->
-<!-- Perhatikan baris kode penulisan contributor di bawah ini -->
+A2.2000104
+
+```
+
+### 3. Buat Direktori NIM
+
+Pada branch tersebut, buat direktori dengan nama **NIM Anda**.
+
+### 4. Buat Subdirektori Praktikum
+
+Di dalam folder NIM, buat folder untuk setiap pertemuan praktikum.
+
+Format penamaan: `Praktikum-XX`_`Judul-singkat`
+
+```bash
+Praktikum-01_Git
+Praktikum-02_Responsive-Design
+dst...
+```
+
+### 5. Simpan File Tugas
+Semua file tugas praktikum disimpan di dalam direktori NIM masing-masing.
+
+Berkas yang dikumpulkan berupa:
+
+- `Source code`
+- `File pendukung praktikum`
+
+### 6. Push ke Repository Fork
+Push seluruh perubahan ke repository **fork** Anda pada branch **NIM**.
+
+### 7. Buat Pull Request
+
+Buat **Pull Request** untuk melakukan merge dari:
+
+```
+branch NIM → branch master (repository utama)
+```
+
+### 8. Status Tugas
+Tugas Anda dinyatakan **diterima** apabila **Pull Request telah di-merge** ke branch `master`.
+
+---
+
+# 📂 Contoh Struktur Direktori
+
+Berikut contoh struktur direktori yang benar:
+
+```
+
+.
+├── ...
+├── A2.2000104
+│   ├── Praktikum-01_...
+│   ├── Praktikum-02_...
+│   ├── Praktikum-03_...
+│   └── README.md
+└── ...
+
+```
+
+Keterangan:
+
+- **A2.2000104** → folder NIM mahasiswa
+- **Praktikum -01** → hasil tugas pertemuan pertama
+- **README.md** → catatan tambahan (opsional)
+
+---
+
+# 🔄 Cara Mengetahui Pull Request Sudah di Merge
+
+Anda dapat memantau status penggabungan dengan beberapa cara:
+
+### 1. Memantau Repository
+
+Pantau repository ini pada bagian **Pull Requests**.
+
+### 2. Menambahkan Remote Upstream
+
+Tambahkan repository utama sebagai **upstream** pada repository lokal hasil fork.
+
+```
+git remote add upstream [https://github.com/PBWFEND/SI-IV-B.git](https://github.com/PBWFEND/SI-IV-B.git)
+```
+
+Kemudian lakukan sinkronisasi:
+
+```
+
+git fetch upstream
+git merge upstream/master
+
+```
+
+Panduan lengkap dapat dibaca di:
+
+- https://help.github.com/en/articles/configuring-a-remote-for-a-fork
+- https://help.github.com/en/articles/syncing-a-fork
+
+---
+
+# 📚 Modul Praktikum
+
+Modul praktikum dapat diakses pada repository berikut:
+
+- [Modul Praktikum](https://github.com/PBWFEND/Modul-Praktikum)
+
+---
+
+# ✨ Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START -->
+<!-- Jangan menghapus atau mengubah bagian ini -->
+
 <table>
-     <tr>
-          <td align="center">
-                <a href="https://github.com/PBWFEND/SI-IV-B/graphs/contributors"><img src="https://contrib.rocks/image?repo=PBWFEND/SI-IV-B" alt="Contributors" /></a>
-          </td>
-     </tr>
+<tr>
+<td align="center">
+<a href="https://github.com/PBWFEND/SI-IV-B/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=PBWFEND/SI-IV-B" alt="Contributors" />
+</a>
+</td>
+</tr>
 </table>
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 <p align="center">
-<a href="#"><img src="https://img.shields.io/github/forks/PBWFEND/SI-IV-B?label=fork&style=social" alt="Fork"></a>
-<a href="#"><img src="https://img.shields.io/github/contributors/PBWFEND/SI-IV-B" alt="Contributors"></a>
-<a href="#"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/PBWFEND/SI-IV-B"></a>
+<a href="#"><img src="https://img.shields.io/github/forks/PBWFEND/SI-IV-B?label=fork&style=social"></a>
+<a href="#"><img src="https://img.shields.io/github/contributors/PBWFEND/SI-IV-B"></a>
+<a href="#"><img src="https://img.shields.io/github/last-commit/PBWFEND/SI-IV-B"></a>
 </p>
