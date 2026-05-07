@@ -1,0 +1,287 @@
+/* ===================== */
+/* RESET */
+/* ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ===================== */
+/* BODY */
+/* ===================== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ===================== */
+/* NAVBAR */
+/* ===================== */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ===================== */
+/* HERO */
+/* ===================== */
+.hero-section {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    padding: 80px 0;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid white;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* ===================== */
+/* ANIMASI */
+/* ===================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section h1,
+.hero-section p,
+.hero-section button {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* ===================== */
+/* SECTION */
+/* ===================== */
+.section-title {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* ===================== */
+/* CARD */
+/* ===================== */
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: #ffffff;
+    color: #000000;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.experience-card {
+    border-left: 5px solid #007bff;
+}
+
+/* ===================== */
+/* HOBBY */
+/* ===================== */
+.hobby-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #007bff;
+    transition: transform 0.3s;
+}
+
+.hobby-icon:hover {
+    transform: scale(1.2);
+}
+
+/* ===================== */
+/* MEDIA */
+/* ===================== */
+iframe {
+    border-radius: 10px;
+}
+
+/* ===================== */
+/* FORM */
+/* ===================== */
+form input,
+form textarea,
+form select {
+    border-radius: 8px !important;
+}
+
+button {
+    transition: all 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* ===================== */
+/* FOOTER */
+/* ===================== */
+footer {
+    position: relative;
+}
+
+.social-links a {
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #00f2fe;
+}
+
+/* ===================== */
+/* BACK TO TOP */
+/* ===================== */
+#backToTop {
+    display: none;
+}
+
+/* ===================== */
+/* DARK MODE GLOBAL */
+/* ===================== */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* TEXT */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p,
+.dark-mode label {
+    color: #df7474 !important;
+}
+
+/* NAVBAR */
+.dark-mode .navbar {
+    background-color: #1e1e1e !important;
+}
+
+.dark-mode .navbar .nav-link,
+.dark-mode .navbar .navbar-brand {
+    color: #ffffff !important;
+}
+
+/* ===================== */
+/* FIX UTAMA: CARD DARK MODE */
+/* ===================== */
+.dark-mode .card {
+    background-color: #1e1e1e !important; /* BUKAN PUTIH */
+    color: #e63636 !important;
+    border: 1px solid #333;
+}
+
+.dark-mode .card .card-title,
+.dark-mode .card .card-text,
+.dark-mode .card p {
+    color: #ecacac !important;
+}
+
+.dark-mode .card .text-muted {
+    color: #c49090 !important;
+}
+
+/* ===================== */
+/* FORM DARK */
+/* ===================== */
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+    border: 1px solid #444;
+}
+
+/* PLACEHOLDER */
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder {
+    color: #cccccc !important;
+    opacity: 1;
+}
+
+/* BUTTON */
+.dark-mode .btn-secondary {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+/* HIRE ME BUTTON */
+.dark-mode .hero-section .btn {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* FOOTER */
+.dark-mode footer {
+    background-color: #1e1e1e !important;
+}
+
+/* ICON */
+.dark-mode i {
+    color: #ffffff;
+}
+
+/* ===================== */
+/* MODAL DARK MODE */
+/* ===================== */
+.dark-mode .modal-content {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #333;
+}
+
+.dark-mode .modal input,
+.dark-mode .modal textarea,
+.dark-mode .modal select {
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+    border: 1px solid #444;
+}
+
+.dark-mode .modal input::placeholder,
+.dark-mode .modal textarea::placeholder {
+    color: #cccccc !important;
+}
+
+.dark-mode .modal .btn-primary {
+    background-color: #00c6ff;
+    color: #000;
+}
+
+.dark-mode .btn-close {
+    filter: invert(1);
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 20px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hobby-icon {
+        font-size: 30px;
+    }
+}
