@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio Rasya Putri Ramadhani" />
+  <title> Rasya Putri Ramadhani — Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div id="page-loader" class="page-loader">
+    <div class="loader-content">
+      <div class="loader-logo">RA</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <span class="loader-text">Loading...</span>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <!-- Logo -->
+      <a href="#home" class="nav-logo">
+        <span class="logo-text">RA</span>
+        <span class="logo-dot"></span>
+      </a>
+
+      <!-- Nav Links -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Controls -->
+      <div class="nav-controls">
+        <!-- Dark/Light Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <span class="toggle-icon sun"><i class="fas fa-sun"></i></span>
+          <span class="toggle-icon moon"><i class="fas fa-moon"></i></span>
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-blob blob-3"></div>
+    </div>
+
+    <div class="hero-content container">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for work
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line">Rasya</span>
+          <span class="title-line accent">Putri Ramadhani</span>
+        </h1>
+        <p class="hero-desc">
+          Welcome to my portfolio. I am an enthusiastic and dedicated Information Systems student, actively developing practical skills to prepare for a career in the industry.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn btn-primary">
+            View My Work <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="assets/docs/CV Rasya Putri Ramadhani - 240160221055.pdf" class="btn btn-ghost" download>
+            Download CV <i class="fas fa-download"></i>
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/Rasya-Putri-R91006" class="social-link" aria-label="GitHub" data-tooltip="GitHub">
+            <svg role="img" viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+      <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+    </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/rasyaputriramadhani?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-link" aria-label="LinkedIn" data-tooltip="LinkedIn">
+            <img src="assets/icons/social/linkedin.svg" alt="Linkedin" width="20" height="20" />
+          </a>
+          <a href="https://www.instagram.com/s.smoothiesya" class="social-link" aria-label="Instagram" data-tooltip="Instagram">
+            <img src="assets/icons/social/instagram-icon.svg" alt="Instagram.svg" width="20" height="20" />
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <div class="hero-image-ring ring-1"></div>
+        <div class="hero-image-ring ring-2"></div>
+        <div class="hero-image-ring ring-3"></div>
+        <div class="hero-avatar">
+          <!-- Placeholder avatar dengan SVG -->
+          <img src="assets/images/profile/aca.jpg" alt="Rasya Putri Ramadhani" class="avatar-svg">
+        </div>
+        <div class="hero-card card-2">
+          <i class="fas fa-star"></i>
+          <span>Junior Developer (Internship Experience)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: Info -->
+        <div class="about-info">
+          <div class="about-text">
+            <p>
+              Hello! I’m <strong>Rasya Putri Ramadhani</strong>, a fourth semester student with a strong interest in Web Development and UI/UX Design. I have internship experience as a Junior Developer Intern, focusing on developing Excel based administrative systems and data management.
+
+That experience sparked my interest in learning more about website development and creating functional, user friendly interfaces. Currently, I continue to improve my skills through various projects and by exploring modern technologies.
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-count="4">4</span>
+              <span class="stat-label">4 academic projects + 1 internship project</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="0">0</span>
+              <span class="stat-label">Clients</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="2">2</span>
+              <span class="stat-label">2 years of college (still ongoing)</span>
+            </div>
+          </div>
+
+          <!-- Education Timeline -->
+          <div class="education">
+            <h3 class="sub-title">Education</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2024 – Present</span>
+                  <h4> Information Systems</h4>
+                  <p>Sebelas April University</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2022-2024</span>
+                  <h4>Natural Sciences</h4>
+                  <p>SMAN 1 Cimalaka</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Skills -->
+        <div class="about-skills">
+          <h3 class="sub-title">Skills</h3>
+
+          <div class="skills-tabs">
+            <button class="skill-tab active" data-tab="frontend">Frontend</button>
+            <button class="skill-tab" data-tab="UI/UX Design">UI/UX Design</button>
+            <button class="skill-tab" data-tab="Administrative & Data Systems">Administrative & Data Systems</button>
+          </div>
+
+          <div class="skills-content">
+            <!-- Frontend -->
+            <div class="skills-panel active" id="tab-frontend">
+              <div class="skill-bar-wrap">
+                <div class="skill-label"><span>React.js</span><span>85%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-label"><span>HTML</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-label"><span>JavaScript</span><span>84%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="84"></div></div>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-label"><span>CSS / Tailwind</span><span>89%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="89"></div></div>
+              </div>
+            </div>
+
+            <!-- UI/UX Design -->
+            <div class="skills-panel" id="tab-UI/UX Design">
+              <div class="skill-bar-wrap">
+                <div class="skill-label"><span>Figma</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-label"><span>Wireframing</span><span>89%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="89"></div></div>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-label"><span>User Interface Design</span><span>88%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+              </div>
+            </div>
+
+            <!-- Administrative & Data Systems -->
+            <div class="skills-panel" id="tab-Administrative & Data Systems">
+              <div class="skill-bar-wrap">
+                <div class="skill-label"><span>Microsoft Excel</span><span>93%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="93"></div></div>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-label"><span>Data Management</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-label"><span>Spreadsheet Automation</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-label"><span>Reporting System</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+              </div>
+          </div>
+
+          <!-- Tech Icons Grid -->
+          <div class="tech-icons">
+             <div class="tech-icon" data-tooltip="Figma">
+              <img src="assets/icons/skills/Figma.svg" alt="Figma" width="22" height="22" />
+            </div>
+            <div class="tech-icon" data-tooltip="Node.js">
+              <img src="assets/icons/skills/Nodejs.svg" alt="Node.js" width="22" height="22" />
+            </div>
+            <div class="tech-icon" data-tooltip="JavaScript">
+              <img src="assets/icons/skills/JavaScript.svg" alt="JavaScript" width="22" height="22" />
+            </div>
+            <div class="tech-icon" data-tooltip="Python">
+              <img src="assets/icons/skills/Python.svg" alt="Python" width="22" height="22" />
+            </div>
+            <div class="tech-icon" data-tooltip="Git">
+              <img src="assets/icons/skills/Git.svg" alt="Git" width="22" height="22" />
+            </div>
+             <div class="tech-icon" data-tooltip="HTML">
+              <img src="assets/icons/skills/html5.svg" alt="HTML" width="22" height="22" />
+            </div>
+             <div class="tech-icon" data-tooltip="Microsoft Excel">
+              <img src="assets/icons/skills/microsoft-excel.svg" alt="Microsoft Excel" width="22" height="22" />
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Featured Projects</span>
+        <h2 class="section-title">my <span class="accent">Portfolio</span></h2>
+      </div>
+
+      <!-- Filter -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="School Assignments">School Assignments</button>
+        <button class="filter-btn" data-filter="Internship Project">Internship Project</button>
+        <button class="filter-btn" data-filter="Web App">Web App</button>
+      </div>
+
+      <!-- Grid -->
+<div class="portfolio-grid" id="portfolio-grid">
+
+  <div class="portfolio-item" data-category="School Assignments" data-index="0">
+    <div class="portfolio-card">
+      <div class="portfolio-image">
+        <img src="assets/images/projects/digital-transformationn.png" alt="Digital Transformation" loading="lazy"/>
+        <div class="portfolio-overlay">
+          <button class="overlay-btn view-btn" data-index="0">
+            <i class="fas fa-expand"></i>
+          </button>
+          <a href="https://github.com/Rasya-Putri-R91006/college-assignments-/tree/master/Transformasi%20Digital" class="overlay-btn" target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-info">
+        <span class="project-cat">School Assignments</span>
+        <h3>Digital Transformation</h3>
+        <p>CRUD Application (Create, Read, Update, Delete application)</p>
+        <div class="project-tags">
+          <span>Python</span><span>Xampp</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-item" data-category="School Assignments" data-index="1">
+    <div class="portfolio-card">
+      <div class="portfolio-image">
+        <img src="assets/images/projects/Algorithms-and-Programming.png" alt="Algorithms and Programming" loading="lazy"/>
+        <div class="portfolio-overlay">
+          <button class="overlay-btn view-btn" data-index="1">
+            <i class="fas fa-expand"></i>
+          </button>
+          <a href="https://github.com/Rasya-Putri-R91006/college-assignments-/tree/master/Algoritma%20dan%20Pemrograman" class="overlay-btn" target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-info">
+        <span class="project-cat">School Assignments</span>
+        <h3>Algorithms and Programming</h3>
+        <p>Wedding Organization Booking.</p>
+        <div class="project-tags">
+          <span>Dev C++</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-item" data-category="School Assignments" data-index="2">
+    <div class="portfolio-card">
+      <div class="portfolio-image">
+        <img src="assets/images/projects/Object-OrientedProgramming.png" alt="Object Oriented Programming" loading="lazy"/>
+        <div class="portfolio-overlay">
+          <button class="overlay-btn view-btn" data-index="2">
+            <i class="fas fa-expand"></i>
+          </button>
+          <a href="https://github.com/Rasya-Putri-R91006/college-assignments-/tree/master/Pemrograman%20Berorientasi%20Objek" class="overlay-btn" target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-info">
+        <span class="project-cat">School Assignments</span>
+        <h3>Object Oriented Programming</h3>
+        <p>Store Management</p>
+        <div class="project-tags">
+          <span>PHP</span><span>Xampp</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-item" data-category="School Assignments" data-index="3">
+    <div class="portfolio-card">
+      <div class="portfolio-image">
+        <img src="assets/images/projects/indonesia.jpeg" alt="Indonesian Language Assignment" loading="lazy"/>
+        <div class="portfolio-overlay">
+          <button class="overlay-btn view-btn" data-index="3">
+            <i class="fas fa-expand"></i>
+          </button>
+          <a href="https://youtu.be/naLWb0bbEKw?si=UcbMrxUywsW-O4yX" class="overlay-btn" target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-info">
+        <span class="project-cat">School Assignments</span>
+        <h3>Indonesian Language Assignment</h3>
+        <p>Video editing assignment</p>
+        <div class="project-tags">
+          <span>Capcut</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-item" data-category="Internship Project" data-index="4">
+    <div class="portfolio-card">
+      <div class="portfolio-image">
+        <div class="project-placeholder" style="--c1:#4facfe;--c2:#00f2fe">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="portfolio-overlay">
+          <button class="overlay-btn view-btn" data-index="4">
+            <i class="fas fa-expand"></i>
+          </button>
+          <a href="#" class="overlay-btn" target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-info">
+        <span class="project-cat">Internship Project</span>
+        <h3>SOON</h3>
+        <p>SOON</p>
+        <div class="project-tags">
+          <span>-</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-item" data-category="Web App" data-index="5">
+    <div class="portfolio-card">
+      <div class="portfolio-image">
+        <div class="project-placeholder" style="--c1:#fa709a;--c2:#fee140">
+          <i class="fas fa-pencil-ruler"></i>
+        </div>
+        <div class="portfolio-overlay">
+          <button class="overlay-btn view-btn" data-index="5">
+            <i class="fas fa-expand"></i>
+          </button>
+          <a href="#" class="overlay-btn" target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-info">
+        <span class="project-cat">Web App</span>
+        <h3>SOON</h3>
+        <p>SOON</p>
+        <div class="project-tags">
+          <span>-</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact Me</span>
+        <h2 class="section-title">Let’s <span class="accent">Collaborate</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <p class="contact-intro">
+            Have an interesting project? I’m always open to discussing new collaboration opportunities. Let’s bring your ideas to life together!
+          </p>
+
+          <div class="contact-details">
+            <a href="mailto:240160221055@student.unsap.ac.id" class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">240160221055@student.unsap.ac.id</span>
+              </div>
+            </a>
+            <a href="tel:+6281234567890" class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">+6285220784034</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Sumedang, West Java, Indonesia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://github.com/Rasya-Putri-R91006" class="social-link" aria-label="GitHub" data-tooltip="GitHub">
+            <svg role="img" viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+      <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+    </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/rasyaputriramadhani?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-link" aria-label="LinkedIn" data-tooltip="LinkedIn">
+            <img src="assets/icons/social/linkedin.svg" alt="Linkedin" width="20" height="20" />
+          </a>
+          <a href="https://www.instagram.com/s.smoothiesya" class="social-link" aria-label="Instagram" data-tooltip="Instagram">
+            <img src="assets/icons/social/instagram-icon.svg" alt="Instagram.svg" width="20" height="20" />
+          </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Dominic Frederick" autocomplete="name" />
+                <span class="field-error" id="name-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="dominic26@email.com" autocomplete="email" />
+                <span class="field-error" id="email-error"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="About My Projects
+..." />
+              <span class="field-error" id="subject-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or idea..."></textarea>
+              <span class="field-error" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loading" style="display:none">
+                <i class="fas fa-spinner fa-spin"></i> Sending...
+              </span>
+              <i class="fas fa-paper-plane btn-icon"></i>
+            </button>
+            <div class="form-success" id="form-success" style="display: none;">
+              <i class="fas fa-check-circle"></i>
+              Message sent successfully! I’ll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-text">RA</span>
+          <span class="logo-dot"></span>
+        </div>
+        <p class="footer-copy">
+          &copy; 2026 Rasya Putri Ramadhani. 
+        </p>
+        <a href="#home" class="back-to-top" id="back-to-top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-overlay" id="lightbox-overlay"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightbox-close"><i class="fas fa-times"></i></button>
+      <button class="lightbox-prev" id="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="lightbox-next" id="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+      <div class="lightbox-content" id="lightbox-content"></div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
