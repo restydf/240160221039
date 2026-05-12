@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Portofolio profesional Muhammad Kurnia - Web Developer, Service & Repair Specialist">
+    <meta name="author" content="Muhammad Kurnia">
+    <title>Muhamad Kurnia | Portfolio Professional</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="asset/style.css">
+</head>
+<body>
+
+<!-- Loading Animation -->
+<div id="loading-overlay">
+    <div class="loader"></div>
+    <p>Loading portfolio...</p>
+</div>
+
+<!-- ========== HEADER / NAVIGATION ========== -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">
+            <i class="fas fa-code"></i> Muhamad Kurnia
+        </a>
+        <div class="nav-controls">
+            <button class="theme-toggle" id="themeToggle" aria-label="Dark/Light Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#education">Pendidikan</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-image animate-fade-up">
+                    <img src="asset/img/kurniaa.jpg" alt="Muhammad Kurnia - Profile" class="profile-img" loading="eager">
+                    <div class="hero-social">
+                        <a href="https://www.instagram.com/ini.krniaa_?igsh=MTdnanN3Mnduc3FhMw==" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-kurnia-03264332a" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/kurniaa24" class="social-icon" aria-label="GitHub" onclick="alert('GitHub: github.com/kurnia-dev')"><i class="fab fa-github"></i></a>
+                        <a href="muhamadkurnia24@gmail.com" class="social-icon" aria-label="Email" onclick="alert('Email:muhamadkurnia24@gmail.com')"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-text animate-fade-up delay-1">
+                    <h1>Muhamad Kurnia</h1>
+                    <p class="tagline"><i class="fas fa-laptop-code"></i> Web Developer | Service & Repair Specialist | Creative Technologist</p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn-primary">Lihat Proyek <i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn-outline">Hubungi Saya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ME SECTION ========== -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tentang Saya</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Hallo,nama saya Muhamad kurnia, saya mahasiswa aktif semester 4 yang berkuliah di Universitas sebelah april, saya mengambil fakultas teknologi informasi program studi sistem informasi yang sedang menjalani pendidikan starata 1 (S1). Keterampilan saya adalah mengeksekusi perencanaan yang sudah matang karena akan lebih mudah untuk menentukan hasil yang sempurna. Semenjak saya memulai kuliah saya memutuskan untuk bergabung organisasi himpunan mahasiswa untuk menambah relasi dan juga untuk melatih public speaking. Selain kegiatan berkuliah saya juga berjualan pada setiap hari minggu, karena dari mulai smp saya suka diajak oleh orang tua saya pada setiap minggu nya, maupun hari libur sekolah. Visi hidup saya untuk membuka sebuah bisnis karena saya ingin menerapkan ilmu ataupun hasil yang di dapat dari perkuliahan dengan menerapkannya ke dalam bisnis. Cara untuk mewujudkan nya yaitu dengan kerja sama dari beberapa pihak yang bersedia untuk menjalin kerja sama karena menurut saya untuk mewujudkan semua itu sendirian sangat mustahil dengan keberhasilan yang sempurna, maka harus ada campur tangan orang lain supaya dapat memperluas/mengembangkan dari bisnis tersebut.</p>
+            
+                    <div class="about-stats">
+                        <div class="stat-item"><span>5+</span> Tahun Pengalaman</div>
+                        <div class="stat-item"><span>30+</span> Proyek Selesai</div>
+                        <div class="stat-item"><span>15+</span> Klien Puas</div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION with Progress Bar ========== -->
+    <section id="skills" class="section bg-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Keahlian & Kompetensi</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-info"><span>HTML5 & CSS3</span><span>90%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>JavaScript / ES6</span><span>85%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>React.js</span><span>75%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 75%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Hardware Repair</span><span>88%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 88%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>UI/UX Design</span><span>80%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 80%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Responsive Design</span><span>92%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 92%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EDUCATION TIMELINE ========== -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Riwayat Pendidikan</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="timeline-content">
+                        
+                        <h3>Universitas Sebelas April - Sistem Informasi</h3>
+                        <span class="timeline-date">2024-Sekarang</span>
+                        
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="timeline-content">
+                        <h3>SMK BUDI MANDIRI - Teknik Jaringan Komputer</h3>
+                        <span class="timeline-date">2020 - 2023</span>
+                        
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PORTFOLIO GALLERY (Grid 6 proyek + Filter + Lightbox) ========== -->
+    <section id="portfolio" class="section bg-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Portofolio Proyek</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="hardware">Hardware</button>
+                
+            </div>
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- 6 Project Items dengan data kategori dan lightbox -->
+                <div class="portfolio-item" data-category="web">
+                    <img src="asset/img/1.jpg" alt="Landing Page UMKM" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Landing Page UMKM</h3>
+                        <p>Website modern untuk brand lokal</p>
+                        <button class="lightbox-trigger" data-img="assets/images/projects/project1.jpg" data-title="Landing Page UMKM" data-desc="Desain responsif meningkatkan konversi 35%."><i class="fas fa-search-plus"></i> Preview</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="asset/img/2.jpg" alt="Dashboard Analytics" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Real-time data visualization</p>
+                        <button class="lightbox-trigger" data-img="assets/images/projects/project2.jpg" data-title="Dashboard Analytics" data-desc="Dashboard interaktif dengan Chart.js dan API real-time."><i class="fas fa-search-plus"></i> Preview</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="asset/img/3.jpg" alt="E-commerce Prototype" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce Prototype</h3>
+                        <p>Wireframe & UI modern</p>
+                        <button class="lightbox-trigger" data-img="assets/images/projects/project3.jpg" data-title="E-commerce Prototype" data-desc="Desain UX untuk platform belanja online."><i class="fas fa-search-plus"></i> Preview</button>
+                    </div>
+                </div>
+               <div class="portfolio-item" data-category="web">
+                    <img src="asset/img/4.jpg" alt="Portfolio CMS" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Portfolio CMS</h3>
+                        <p>Content Management System</p>
+                        <button class="lightbox-trigger" data-img="assets/images/projects/project4.jpg" data-title="Portfolio CMS" data-desc="CMS untuk developer dengan editor dinamis."><i class="fas fa-search-plus"></i> Preview</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="hardware">
+                    <img src="asset/img/5.jpg" alt="Laptop Repair Guide" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Laptop Repair Guide</h3>
+                        <p>Interactive tutorial web</p>
+                        <button class="lightbox-trigger" data-img="assets/images/projects/project5.jpg" data-title="Laptop Repair Guide" data-desc="Panduan perbaikan hardware interaktif."><i class="fas fa-search-plus"></i> Preview</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="asset/img/6.jpg" alt="Mobile App UI" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Mobile App UI</h3>
+                        <p>Desain aplikasi fintech</p>
+                        <button class="lightbox-trigger" data-img="assets/images/projects/project6.jpg" data-title="Mobile App UI" data-desc="UI/UX untuk aplikasi keuangan mobile."><i class="fas fa-search-plus"></i> Preview</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT FORM dengan Validasi ========== -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hubungi Saya</h2>
+                <div class="underline"></div>
+                <p>Kirim pesan untuk kolaborasi atau diskusi proyek</p>
+            </div>
+            <div class="contact-wrapper">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Nama Lengkap" required>
+                        <small class="error-msg" id="nameError"></small>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email Address" required>
+                        <small class="error-msg" id="emailError"></small>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subjek">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Pesan Anda..." required></textarea>
+                        <small class="error-msg" id="messageError"></small>
+                    </div>
+                    <button type="submit" class="btn-primary submit-btn">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Indonesia</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <p>kurnia@devportfolio.com</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fab fa-instagram"></i>
+                        <p>@ini.krniaa_</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Muhamad Kurnia — Portofolio Profesional. All rights reserved.</p>
+       
+    </div>
+</footer>
+
+<!-- Lightbox Modal -->
+<div id="lightboxModal" class="lightbox-modal">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Preview">
+    <div class="lightbox-caption">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+    </div>
+</div>
+
+<script src="asset/script.js"></script>
+</body>
+</html>

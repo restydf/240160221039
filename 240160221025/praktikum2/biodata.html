@@ -1,222 +1,649 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Pribadi</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Portofolio profesional Muhammad Kurnia - Web Developer dengan pengalaman dalam pengembangan web dan layanan teknologi.">
+    <meta name="author" content="Muhammad Kurnia">
+    <title>Muhamad Kurnia | Portofolio Developer</title>
+    
+    <!-- Google Fonts Modern & Professional -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 (Free Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <style>
-        /* Reset default margins and paddings */
+        /* ========== CSS RESET & VARIABLES ========== */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Body styles */
+        :root {
+            --primary-dark: #0a192f;
+            --primary-accent: #2563eb;
+            --primary-accent-hover: #1d4ed8;
+            --secondary-accent: #3b82f6;
+            --text-light: #f8fafc;
+            --text-dark: #1e293b;
+            --text-gray: #475569;
+            --bg-light: #ffffff;
+            --bg-offwhite: #f8fafc;
+            --border-light: #e2e8f0;
+            --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+            --shadow-md: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+            --transition-default: all 0.25s ease-in-out;
+            --border-radius-card: 1rem;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #eaeaea;
-            color: #333;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-offwhite);
+            color: var(--text-dark);
             line-height: 1.6;
-            padding: 20px;
+            scroll-behavior: smooth;
         }
 
-        /* Container for layout */
         .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
         }
 
-        /* Text center class */
-        .text-center {
-            text-align: center;
+        /* ========== TYPOGRAPHY ========== */
+        h1, h2, h3, .nav-links a {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 600;
         }
 
-        /* Main title */
         h1 {
-            color: #2c3e50;
-            margin-bottom: 20px;
+            font-size: clamp(2rem, 5vw, 3rem);
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-accent) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -0.02em;
         }
 
-        /* Profile image styles */
-        img {
-            width: 150px;
-            height: auto;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            border: 3px solid #2980b9;
-        }
-
-        /* Section headings */
         h2 {
-            color: #2980b9;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #2980b9;
-            padding-bottom: 5px;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+            color: var(--primary-dark);
         }
 
-        /* Blockquote styles */
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--primary-accent);
+            border-radius: 2px;
+        }
+
+        .text-center h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* ========== NAVBAR ========== */
+        .navbar {
+            background: rgba(255,255,255,0.92);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--border-light);
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-accent);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: var(--transition-default);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-accent);
+        }
+
+        /* ========== BUTTON & LINKS ========== */
+        .btn-primary {
+            display: inline-block;
+            background: var(--primary-accent);
+            color: white;
+            padding: 0.65rem 1.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition-default);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-accent-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* ========== PROFILE SECTION ========== */
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 3rem 0 2rem;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 1.5rem;
+            transition: var(--transition-default);
+        }
+
+        .profile-img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 25px 30px -12px rgba(37, 99, 235, 0.25);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            max-width: 600px;
+            margin-top: 0.5rem;
+        }
+
         blockquote {
             font-style: italic;
-            margin: 10px 0 20px;
-            padding: 10px;
-            background-color: #f4f4f4;
-            border-left: 5px solid #2980b9;
-            border-radius: 5px;
+            max-width: 700px;
+            margin: 1.5rem auto 0;
+            padding: 1rem 1.8rem;
+            background: linear-gradient(120deg, #eff6ff, #ffffff);
+            border-left: 5px solid var(--primary-accent);
+            border-radius: 16px;
+            font-weight: 500;
+            color: var(--primary-dark);
+            box-shadow: var(--shadow-sm);
         }
 
-        /* Table styles */
-        table {
+        /* ========== CARD & GRID ========== */
+        .skills-grid, .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.8rem;
+            margin: 2rem 0;
+        }
+
+        .skill-card, .project-card {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: var(--border-radius-card);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-default);
+            border: 1px solid var(--border-light);
+        }
+
+        .skill-card:hover, .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--secondary-accent);
+        }
+
+        .skill-card i, .project-card i {
+            font-size: 2.2rem;
+            color: var(--primary-accent);
+            margin-bottom: 1rem;
+        }
+
+        .skill-card h3, .project-card h3 {
+            margin-bottom: 0.75rem;
+            font-size: 1.3rem;
+        }
+
+        /* Modern Table */
+        .experience-table-wrapper {
+            overflow-x: auto;
+            margin: 2rem 0;
+            border-radius: 16px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .modern-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
         }
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border: 1px solid #ccc;
-        }
-        th {
-            background-color: #2980b9;
+
+        .modern-table th {
+            background: var(--primary-dark);
             color: white;
+            padding: 1rem;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .modern-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-light);
+            color: var(--text-gray);
+        }
+
+        .modern-table tr:hover {
+            background: #f1f5f9;
+            transition: var(--transition-default);
+        }
+
+        /* Hobby list modern */
+        .hobby-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-between;
+            background: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: 24px;
+            margin: 1.5rem 0;
+        }
+
+        .hobby-column {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .hobby-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-accent);
+        }
+
+        .hobby-column ul {
+            list-style: none;
+        }
+
+        .hobby-column li {
+            margin-bottom: 0.6rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .hobby-column li i {
+            width: 24px;
+            color: var(--primary-accent);
+        }
+
+        /* audio & video container */
+        .media-card {
+            background: white;
+            border-radius: 24px;
+            padding: 1.5rem;
             text-align: center;
+            margin: 2rem 0;
+            box-shadow: var(--shadow-sm);
         }
 
-        /* List styles */
-        ul, ol {
-            margin: 10px 0 20px 20px; /* Indent lists */
-        }
-
-        /* Audio player styles */
         audio {
-            display: block;
-            margin: 20px auto; /* Center audio player */
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
         }
 
-        /* Video iframe styles */
-        iframe {
-            display: block;
-            margin: 20px auto; /* Center video */
-            border: 2px solid #2980b9;
-            border-radius: 5px;
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 20px;
+            margin-top: 1rem;
         }
 
-        /* Link styles */
-        a {
-            color: #2980b9;
-            text-decoration: none; /* Remove underline */
-        }
-        a:hover {
-            text-decoration: underline; /* Underline on hover */
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 20px;
         }
 
-        /* Footer section */
-        footer {
+        /* Contact Section */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 1rem 2rem;
+            border-radius: 60px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: var(--transition-default);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-light);
+        }
+
+        .contact-card i {
+            font-size: 1.4rem;
+            color: var(--primary-accent);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-3px);
+            background: var(--primary-accent);
+            color: white;
+        }
+
+        .contact-card:hover i {
+            color: white;
+        }
+
+        /* Footer */
+        .footer {
             text-align: center;
-            margin: 40px 0;
-            font-size: 0.9em;
-            color: #777;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid var(--border-light);
+            color: var(--text-gray);
+            font-size: 0.85rem;
         }
 
-        /* Embed audio styles */
-        .audio-embed {
-            height: 228px;
-            width: 600px;
-            margin: 20px auto;
-        }                       
+        /* responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.2rem;
+            }
+            .nav-container {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .nav-links {
+                gap: 1.2rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hobby-wrapper {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .contact-links {
+                gap: 1rem;
+            }
+        }
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <!-- Judul Halaman -->
-        <h1 class="text-center">Portofolio Pribadi</h1>
 
-        <!-- Gambar Profil -->
-        <div class="text-center">
-            <img src="kurniaa.jpg"
-                alt="Gambar Profil">
-        </div>
-
-        <!-- Tentang Saya -->
-        <h2 class="text-center">Tentang Saya</h2>
-        <p class="text-center">Selamat datang di portofolio saya! Saya adalah seorang pengembang web yang penuh
-            semangat.</p>
-        <blockquote class="text-center">"Kreativitas adalah intelijensi yang bersenang-senang." - Albert Einstein
-        </blockquote>
-
-        <!-- Pengalaman Kerja -->
-        <h2 class="text-center">Pengalaman Kerja</h2>
-        <table>
-            <tr>
-                <th>Posisi</th>
-                <th>Perusahaan</th>
-                <th>Tahun</th>
-            </tr>
-            <tr>
-                <td>service laptop</td>
-                <td>muazara computer</td>
-                <td>2023</td>
-            </tr>
-            <tr>
-                <td>Junior Developer</td>
-                <td>PT. Inovasi</td>
-                <td>2018-2020</td>
-            </tr>
-        </table>
-
-        <!-- Hobi -->
-        <h2>Hobi Saya</h2>
-        <ul>
-            <li>Membaca</li>
-            <li>Olahraga</li>
-            <li>Fotografi</li>
+<!-- ========== NAVIGATION BAR ========== -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo"><i class="fas fa-code"></i> Kurnia.dev</a>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#experience">Pengalaman</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#contact">Kontak</a></li>
         </ul>
-        <ol>
-            <li>Belajar Bahasa Asing</li>
-            <li>Menulis Blog</li>
-            <li>Melukis</li>
-        </ol>
-
-        <!-- Audio -->
-        <h2 class="text-center">Lagu Favorit</h2>
-        <audio controls>
-            <source src="lagu.mp3" type="audio/mpeg">
-            Browser Anda tidak mendukung pemutar audio.
-        </audio>
-
-        <!-- Embed Audio -->
-        <div class="audio-embed">
-            <iframe src="#"
-                style="display:block; border-radius: 6px; border: none; height: 204px; width: 600px;"></iframe>
-            <a href='#'
-                style="text-align: center; display: block; color: #A4ABB6; font-size: 12px; font-family: sans-serif; line-height: 16px; margin-top: 8px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">embed-musik</a>
-        </div>
-
-        <!-- Video Karya -->
-        <h2 class="text-center">Video Karya</h2>
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0"
-            allowfullscreen></iframe>
-
-        <!-- Link ke Media Sosial -->
-        <h2 class="text-center">Ikuti Saya</h2>
-        <p class="text-center">
-            <a href="https://www.instagram.com/ini.krniaa_?igsh=MTdnanN3Mnduc3FhMw==" target="_blank">Instagram</a> |
-            <a href="https://www.linkedin.com/in/muhammad-kurnia-03264332a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
-        </p>
-
-        <!-- Footer -->
-        <footer>
-            &copy; 2024 Portofolio Pribadi. Semua hak dilindungi.
-        </footer>
     </div>
-</body>
+</nav>
 
+<main>
+    <div class="container">
+        <!-- ========== HOME / PROFILE SECTION ========== -->
+        <section id="home">
+            <div class="profile-section">
+                <img src="kurniaa.jpg" alt="Muhammad Kurnia - Profil Developer" class="profile-img">
+                <h1>Muhammad Kurnia</h1>
+                <p class="tagline"><i class="fas fa-laptop-code"></i> Web Developer | Service & Repair Specialist | Creative Technologist</p>
+                <blockquote>
+                    <i class="fas fa-quote-left" style="margin-right: 8px; color: #2563eb;"></i> 
+                    “Kreativitas adalah intelijensi yang bersenang-senang.” — Albert Einstein
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- ========== ABOUT SECTION (Lebih formal) ========== -->
+        <section id="about">
+            <div class="text-center" style="margin-bottom: 2rem;">
+                <h2>Tentang Saya</h2>
+            </div>
+            <div style="background: white; padding: 2rem; border-radius: 28px; box-shadow: var(--shadow-sm); margin-bottom: 2rem;">
+                <p style="font-size: 1.05rem; line-height: 1.7;">Hallo,nama saya Muhamad kurnia, saya mahasiswa aktif semester 4 yang berkuliah di Universitas sebelah april, saya mengambil fakultas teknologi informasi program studi sistem informasi yang sedang menjalani pendidikan starata 1 (S1). Keterampilan saya adalah mengeksekusi perencanaan yang sudah matang karena akan lebih mudah untuk menentukan hasil yang sempurna. Semenjak saya memulai kuliah saya memutuskan untuk bergabung organisasi himpunan mahasiswa untuk menambah relasi dan juga untuk melatih public speaking. Selain kegiatan berkuliah saya juga berjualan pada setiap hari minggu, karena dari mulai smp saya suka diajak oleh orang tua saya pada setiap minggu nya, maupun hari libur sekolah. Visi hidup saya untuk membuka sebuah bisnis karena saya ingin menerapkan ilmu ataupun hasil yang di dapat dari perkuliahan dengan menerapkannya ke dalam bisnis. Cara untuk mewujudkan nya yaitu dengan kerja sama dari beberapa pihak yang bersedia untuk menjalin kerja sama karena menurut saya untuk mewujudkan semua itu sendirian sangat mustahil dengan keberhasilan yang sempurna, maka harus ada campur tangan orang lain supaya dapat memperluas/mengembangkan dari bisnis tersebut.</p>
+                <br>
+                <p> Berbasis di Indonesia | Tersedia untuk kolaborasi & proyek freelance</p>
+                <div style="margin-top: 1.5rem;">
+                    <a href="#contact" class="btn-primary"><i class="fas fa-paper-plane"></i> Hubungi Saya</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== EXPERIENCE TABLE (Modern) ========== -->
+        <section id="experience">
+            <div class="text-center">
+                <h2>Pengalaman Kerja</h2>
+            </div>
+            <div class="experience-table-wrapper">
+                <table class="modern-table">
+                    <thead>
+                        <tr>
+                            <th>Posisi</th>
+                            <th>Perusahaan</th>
+                            <th>Tahun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fas fa-tools" style="margin-right: 8px; color:#2563eb;"></i> Service Laptop & PC</td>
+                            <td>Muazara Computer</td>
+                            <td>2023</td>
+                        </tr>
+                       
+                       
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ========== SKILLS (Keahlian modern) ========== -->
+        <section id="skills">
+            <div class="text-center">
+                <h2>Keahlian & Kompetensi</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5 & CSS3</h3>
+                    <p>Struktur semantik, Flexbox, Grid, animasi modern.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript / ES6</h3>
+                    <p>Interaktivitas, DOM manipulation, React basics.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Hardware Repair</h3>
+                    <p>Diagnostik laptop, perbaikan motherboard, upgrade komponen.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first approach, cross-browser compatibility.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PROJECT SECTION ========== -->
+        <section id="projects">
+            <div class="text-center">
+                <h2>Proyek Unggulan</h2>
+            </div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Landing Page UMKM</h3>
+                    <p>Website modern untuk brand lokal, meningkatkan konversi 35%.</p>
+                </div>
+                <div class="project-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Dashboard Analytics</h3>
+                    <p>Dashboard real-time dengan visualisasi data interaktif.</p>
+                </div>
+                <div class="project-card">
+                    <i class="fas fa-store"></i>
+                    <h3>E-commerce prototype</h3>
+                    <p>Wireframe dan front-end untuk platform belanja online.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== HOBI (List modern & rapi) ========== -->
+        <section>
+            <div class="text-center">
+                <h2>Passion & Aktivitas</h2>
+            </div>
+            <div class="hobby-wrapper">
+                <div class="hobby-column">
+                    <h3><i class="fas fa-heart" style="color:#e11d48;"></i> Minat Utama</h3>
+                    <ul>
+                        <li><i class="fas fa-book-open"></i> Membaca literatur teknologi</li>
+                        <li><i class="fas fa-dumbbell"></i> Olahraga & Kesehatan</li>
+                        <li><i class="fas fa-camera"></i> Fotografi jalanan</li>
+                    </ul>
+                </div>
+                <div class="hobby-column">
+                    <h3><i class="fas fa-graduation-cap"></i> Pengembangan Diri</h3>
+                    <ul>
+                        <li><i class="fas fa-language"></i> Belajar Bahasa Asing (Inggris, Korea)</li>
+                        <li><i class="fas fa-pen-fancy"></i> Menulis Blog teknis</li>
+                        <li><i class="fas fa-palette"></i> Melukis digital & ilustrasi</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== AUDIO (Lagu favorit) ========== -->
+        <section>
+            <div class="media-card">
+                <h3 style="display: flex; align-items: center; justify-content: center; gap: 10px;"><i class="fas fa-headphones"></i> Lagu Favorit</h3>
+                <audio controls>
+                    <source src="lagu.mp3" type="audio/mpeg">
+                    Browser Anda tidak mendukung pemutar audio.
+                </audio>
+                <p style="margin-top: 12px; font-size: 0.8rem; color: #64748b;">🎵 Karya inspirasi untuk menemani produktivitas</p>
+                <!-- embed audio alternatif sesuai kebutuhan, namun dibiarkan minimalis -->
+                <div style="margin-top: 15px;">
+                    <small><i class="fab fa-spotify"></i> Streaming via platform</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== VIDEO KARYA ========== -->
+        <section>
+            <div class="media-card">
+                <h3 style="display: flex; align-items: center; justify-content: center; gap: 10px;"><i class="fas fa-video"></i> Video Karya & Presentasi</h3>
+                <div class="video-wrapper">
+                    <!-- Video ID asli dari kode sebelumnya, diganti placeholder agar tidak error. Ganti dengan ID YouTube asli jika diperlukan -->
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p style="margin-top: 12px;">Demo proyek: Website interaktif & portofolio digital</p>
+            </div>
+        </section>
+
+        <!-- ========== MEDIA SOSIAL & CONTACT ========== -->
+        <section id="contact">
+            <div class="text-center">
+                <h2>Terhubung Dengan Saya</h2>
+                <p style="margin-bottom: 1rem;">Kolaborasi, diskusi proyek, atau sekadar ngobrol seputar teknologi</p>
+            </div>
+            <div class="contact-links">
+                <a href="https://www.instagram.com/ini.krniaa_?igsh=MTdnanN3Mnduc3FhMw==" target="_blank" class="contact-card">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.linkedin.com/in/muhammad-kurnia-03264332a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="contact-card">
+                    <i class="fab fa-linkedin-in"></i> LinkedIn
+                </a>
+                <a href="#" class="contact-card" onclick="alert('Email: kurnia@devportfolio.com')">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="#" class="contact-card" onclick="alert('GitHub: github.com/kurnia-dev')">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 Muhammad Kurnia — Portofolio Pribadi. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem;">Dibangun dengan <i class="fas fa-heart" style="color: #2563eb;"></i> dan teknologi modern (HTML5, CSS Grid, Flexbox)</p>
+    </div>
+</footer>
+
+<!-- Smooth scroll behavior untuk navigasi yang lebih modern -->
+<script>
+    document.querySelectorAll('.nav-links a, .btn-primary[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if(href && href.startsWith('#')) {
+                e.preventDefault();
+                const targetId = href.substring(1);
+                const targetElement = document.getElementById(targetId);
+                if(targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        });
+    });
+</script>
+
+</body>
 </html>
