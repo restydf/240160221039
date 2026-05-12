@@ -1,6 +1,6 @@
-# 🌿 Zhilan Maulana — Portfolio Website
+# 🌿 Zhilan Maulana — Portofolio Website
 
-Portfolio profesional mahasiswa Sistem Informasi dengan desain modern bertema hijau premium.
+Portofolio profesional mahasiswa Sistem Informasi
 
 ## ✨ Fitur Utama
 
@@ -29,7 +29,7 @@ Portfolio profesional mahasiswa Sistem Informasi dengan desain modern bertema hi
 ## 📁 Project Structure
 
 ```
-portfolio/
+portofolio/
 │
 ├── index.html                  # Halaman utama
 └── assets/
