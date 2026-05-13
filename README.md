@@ -13,7 +13,7 @@ Repository ini digunakan untuk **pengumpulan tugas praktikum mahasiswa** pada ma
 # 📊 Repository Status
 
 <p align="left">
-<img src="https://komarev.com/ghpvc/?username=SI-IV-A&color=blueviolet">
+<img src="https://komarev.com/ghpvc/?username=SI-IV-B&color=blueviolet">
 <img src="https://img.shields.io/github/repo-size/PBWFEND/SI-IV-B">
 <img src="https://img.shields.io/github/last-commit/PBWFEND/SI-IV-B">
 <img src="https://img.shields.io/github/contributors/PBWFEND/SI-IV-B">
