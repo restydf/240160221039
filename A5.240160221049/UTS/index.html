@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio profesional - Sistem Informasi" />
+  <title>Zhilan Maulana | Portofolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../UTS/asset/css/custom.css" />
+</head>
+<body>
+
+  <!-- ========== LOADING SCREEN ========== -->
+  <div id="loader" class="loader">
+    <div class="loader__inner">
+      <svg class="loader__logo" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="30,4 56,18 56,42 30,56 4,42 4,18" stroke="var(--accent)" stroke-width="2" fill="none" class="loader__hex"/>
+        <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="var(--accent)" font-size="18" font-family="Syne" font-weight="800">ZM</text>
+      </svg>
+      <div class="loader__bar"><div class="loader__fill"></div></div>
+      <span class="loader__text">Loading Portofolio...</span>
+    </div>
+  </div>
+
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <!-- Logo -->
+      <a href="#home" class="nav__logo" aria-label="Logo Zhilan Maulana">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+          <polygon points="24,3 45,15 45,33 24,45 3,33 3,15" fill="var(--accent-dim)" stroke="var(--accent)" stroke-width="1.5"/>
+          <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="var(--accent)" font-size="14" font-family="Syne" font-weight="800">ZM</text>
+        </svg>
+        <span>Zhilan<strong>Maulana</strong></span>
+      </a>
+
+      <!-- Nav Menu -->
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#portofolio" class="nav__link">Portofolio</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <!-- Right Controls -->
+      <div class="nav__controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle Theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="nav__burger" id="navBurger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="home">
+      <!-- Animated background grid -->
+      <div class="hero__grid" aria-hidden="true"></div>
+      <!-- Floating orbs -->
+      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--3" aria-hidden="true"></div>
+
+      <div class="container hero__container">
+        <!-- Profile Image -->
+        <div class="hero__image-wrap" data-aos="fade-right">
+          <div class="hero__image-ring"></div>
+          <div class="hero__image-ring hero__image-ring--2"></div>
+          <img
+            src="../UTS/asset/img/Zhilan_Maulana.jpeg"
+            alt="Zhilan Maulana - Profile Photo"
+            class="hero__image"
+            loading="eager"
+          />
+          <!-- Status badge -->
+          <span class="hero__badge">
+            <span class="hero__badge-dot"></span>Available for Work
+          </span>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero__content" data-aos="fade-left">
+          <p class="hero__greeting">👋 Halo, Saya</p>
+          <h1 class="hero__name">
+            Zhilan<br />
+            <span class="hero__name-accent">Maulana</span>
+          </h1>
+          <div class="hero__typewriter-wrap">
+            <span class="hero__typewriter" id="typewriter"></span>
+            <span class="hero__cursor">|</span>
+          </div>
+          <p class="hero__desc">
+            Mahasiswa Sistem Informasi yang passionate dalam membangun pengalaman digital yang indah, fungsional, dan user-centric.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero__actions">
+            <a href="#portofolio" class="btn btn--primary">
+              <i class="fas fa-briefcase"></i> Lihat Portofolio
+            </a>
+            
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero__socials">
+            <a href="https://github.com/ZhilanMaulana" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/maulana-zhilan-54364140a?trk=contact-info" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/ngabmaull?igsh=d3BmNnpwM3I0aG5j" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="zhimal96@gmail.com" class="social-link" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <a href="#about" class="hero__scroll" aria-label="Scroll to About">
+        <span class="hero__scroll-text">Scroll</span>
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Get to Know Me</span>
+          <h2 class="section-title">About <span class="text-accent">Me</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about__grid">
+          <!-- Personal Description -->
+          <div class="about__text" data-aos="fade-right">
+            <h3 class="about__subtitle">Halo, saya Zhilan Maulana! 👨‍💻</h3>
+            <p>
+              Saya adalah mahasiswa Sistem Informasi semester 4 yang memiliki minat besar pada web development, UI/UX design, dan teknologi informasi. Saya percaya bahwa teknologi yang baik harus indah sekaligus fungsional.
+            </p>
+            <p>
+              Meskipun pengalaman mengerjakan proyek web saya masih sedikit, saya selalu berusaha menghadirkan solusi digital yang tidak hanya memenuhi kebutuhan teknis, tetapi juga memberikan pengalaman pengguna yang menyenangkan.
+            </p>
+            <div class="about__stats">
+              <div class="stat-card">
+                <span class="stat-card__number">9</span>
+                <span class="stat-card__label">Projects</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-card__number">2+</span>
+                <span class="stat-card__label">Years Learning</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-card__number">8+</span>
+                <span class="stat-card__label">Technologies</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="about__skills" data-aos="fade-left">
+            <h3 class="about__subtitle">Skills & Expertise</h3>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <span class="skill-item__name"><i class="fab fa-html5"></i> HTML5 & CSS3</span>
+                  <span class="skill-item__pct">50%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="50"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <span class="skill-item__name"><i class="fab fa-js"></i> JavaScript</span>
+                  <span class="skill-item__pct">50%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="50"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <span class="skill-item__name"><i class="fab fa-php"></i> PHP & MySQL</span>
+                  <span class="skill-item__pct">50%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="50"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <span class="skill-item__name"><i class="fab fa-react"></i> React.js</span>
+                  <span class="skill-item__pct">50%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="50"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <span class="skill-item__name"><i class="fab fa-figma"></i> UI/UX Design</span>
+                  <span class="skill-item__pct">50%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="50"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <span class="skill-item__name"><i class="fas fa-database"></i> Database Design</span>
+                  <span class="skill-item__pct">50%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="50"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Timeline -->
+        <div class="education" data-aos="fade-up">
+          <h3 class="about__subtitle text-center" style="margin-bottom:2.5rem">
+            <i class="fas fa-graduation-cap text-accent"></i> Education Timeline
+          </h3>
+          <div class="timeline">
+            <div class="timeline__item" data-aos="fade-right">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <span class="timeline__year">2021 – 2024</span>
+                <h4 class="timeline__title">SMA - Jurusan IPS</h4>
+                <p class="timeline__place"><i class="fas fa-university"></i> SMAN SITURAJA</p>
+                <p class="timeline__desc">Anggota Ekskull Bahasa Iggris</p>
+              </div>
+            </div>
+            <div class="timeline__item" data-aos="fade-left">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <span class="timeline__year">2024 - Sekarang</span>
+                <h4 class="timeline__title">S1 Sistem Informasi</h4>
+                <p class="timeline__place"><i class="fas fa-school"></i> UNIVERSITAS SEBELAS APRIL</p>
+                <p class="timeline__desc"> Member English Club</p>
+              </div>
+            </div>
+            <div class="timeline__item" data-aos="fade-right">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <span class="timeline__year">2026</span>
+                <h4 class="timeline__title">Petani Kecil</h4>
+                <p class="timeline__place"><i class="fas fa-house"></i> Rumah</p>
+                <p class="timeline__desc">Mencoba Bertani Untuk Mendapatkan Pengalaman Baru</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PORTFOLIO SECTION ========== -->
+    <section class="portofolio section" id="portofolio">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">My Work</span>
+          <h2 class="section-title">Portofolio <span class="text-accent">Gallery</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="portofolio__filters" data-aos="fade-up">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web">Web Dev</button>
+          <button class="filter-btn" data-filter="ui">UI/UX</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+        </div>
+
+        <!-- Portofolio Grid -->
+        <div class="portofolio__grid" id="portofolioGrid">
+
+          <div class="project-card" data-category="web" data-aos="zoom-in">
+            <div class="project-card__img-wrap">
+              <img src="../UTS/asset/img/e-SHOP.jpeg" alt="E-Commerce App" class="project-card__img" loading="lazy" />
+              <div class="project-card__overlay">
+                <button class="project-card__preview" data-id="0" aria-label="Preview project"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Web Dev</span>
+              <h3 class="project-card__title">E-Commerce Platform</h3>
+              <p class="project-card__desc">Platform belanja online lengkap dengan fitur cart, payment gateway, dan dashboard admin.</p>
+              <div class="project-card__tech">
+                <span>HTML</span><span>CSS</span><span>PHP</span><span>MySQL</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="ui" data-aos="zoom-in" data-aos-delay="100">
+            <div class="project-card__img-wrap">
+              <img src="../UTS/asset/img/DASHBOARD UI.jpeg" alt="Dashboard UI" class="project-card__img" loading="lazy" />
+              <div class="project-card__overlay">
+                <button class="project-card__preview" data-id="1" aria-label="Preview project"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">UI/UX</span>
+              <h3 class="project-card__title">Admin Dashboard</h3>
+              <p class="project-card__desc">Desain dashboard analitik modern dengan visualisasi data real-time dan tema yang dapat dikustomisasi.</p>
+              <div class="project-card__tech">
+                <span>Figma</span><span>CSS Grid</span><span>Chart.js</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="mobile" data-aos="zoom-in" data-aos-delay="200">
+            <div class="project-card__img-wrap">
+              <img src="../UTS/asset/img/FINANCE APP.jpeg" alt="Finance App" class="project-card__img" loading="lazy" />
+              <div class="project-card__overlay">
+                <button class="project-card__preview" data-id="2" aria-label="Preview project"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Mobile</span>
+              <h3 class="project-card__title">Finance Tracker</h3>
+              <p class="project-card__desc">Aplikasi pencatatan keuangan pribadi dengan laporan bulanan dan notifikasi pengeluaran.</p>
+              <div class="project-card__tech">
+                <span>React Native</span><span>Firebase</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="web" data-aos="zoom-in" data-aos-delay="100">
+            <div class="project-card__img-wrap">
+              <img src="../UTS/asset/img/Content Management.jpeg" alt="Blog CMS" class="project-card__img" loading="lazy" />
+              <div class="project-card__overlay">
+                <button class="project-card__preview" data-id="3" aria-label="Preview project"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Web Dev</span>
+              <h3 class="project-card__title">Blog CMS</h3>
+              <p class="project-card__desc">Content Management System untuk blog dengan editor WYSIWYG dan SEO optimization bawaan.</p>
+              <div class="project-card__tech">
+                <span>Laravel</span><span>Vue.js</span><span>MySQL</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="ui" data-aos="zoom-in" data-aos-delay="200">
+            <div class="project-card__img-wrap">
+              <img src="../UTS/asset/img/TRAVEL APP.jpeg" alt="Travel App UI" class="project-card__img" loading="lazy" />
+              <div class="project-card__overlay">
+                <button class="project-card__preview" data-id="4" aria-label="Preview project"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">UI/UX</span>
+              <h3 class="project-card__title">Travel App Design</h3>
+              <p class="project-card__desc">Desain aplikasi pemesanan perjalanan dengan alur UX yang intuitif dan visual yang memukau.</p>
+              <div class="project-card__tech">
+                <span>Figma</span><span>Prototype</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Figma</a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="web" data-aos="zoom-in" data-aos-delay="300">
+            <div class="project-card__img-wrap">
+              <img src="../UTS/asset/img/SCHOOL MANAGEMENT.jpeg" alt="School Management System" class="project-card__img" loading="lazy" />
+              <div class="project-card__overlay">
+                <button class="project-card__preview" data-id="5" aria-label="Preview project"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Web Dev</span>
+              <h3 class="project-card__title">School Management</h3>
+              <p class="project-card__desc">Sistem informasi manajemen sekolah dengan modul absensi, nilai, dan laporan orang tua.</p>
+              <div class="project-card__tech">
+                <span>CodeIgniter</span><span>Bootstrap</span><span>MySQL</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Contact <span class="text-accent">Me</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact__grid">
+          <!-- Contact Info -->
+          <div class="contact__info" data-aos="fade-right">
+            <h3 class="contact__info-title">Mari Berkolaborasi! 🚀</h3>
+            <p class="contact__info-text">
+              Saya selalu terbuka untuk proyek baru, peluang magang, atau sekadar ngobrol tentang teknologi. Jangan ragu untuk menghubungi saya!
+            </p>
+
+            <div class="contact__details">
+              <div class="contact__detail-item">
+                <div class="contact__detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                  <strong>Lokasi</strong>
+                  <span>Sumedang, Jawa Barat</span>
+                </div>
+              </div>
+              <div class="contact__detail-item">
+                <div class="contact__detail-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <strong>Email</strong>
+                  <span>zhimal96@gmail.com</span>
+                </div>
+              </div>
+              <div class="contact__detail-item">
+                <div class="contact__detail-icon"><i class="fas fa-phone"></i></div>
+                <div>
+                  <strong>Phone</strong>
+                  <span>+62 857 9710 4589</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact__socials">
+              <a href="https://github.com/ZhilanMaulana" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/maulana-zhilan-54364140a?trk=contact-info" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/ngabmaull?igsh=d3BmNnpwM3I0aG5j" target="_blank" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact__form-wrap" data-aos="fade-left">
+            <form class="contact__form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Nama Lengkap *</label>
+                <div class="input-wrap">
+                  <i class="fas fa-user input-icon"></i>
+                  <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" autocomplete="name" />
+                </div>
+                <span class="form-error" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <div class="input-wrap">
+                  <i class="fas fa-envelope input-icon"></i>
+                  <input type="email" id="email" name="email" placeholder="Masukkan email Anda" autocomplete="email" />
+                </div>
+                <span class="form-error" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subjek *</label>
+                <div class="input-wrap">
+                  <i class="fas fa-tag input-icon"></i>
+                  <input type="text" id="subject" name="subject" placeholder="Topik pesan Anda" />
+                </div>
+                <span class="form-error" id="subjectError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Pesan *</label>
+                <div class="input-wrap textarea-wrap">
+                  <i class="fas fa-comment input-icon"></i>
+                  <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..."></textarea>
+                </div>
+                <span class="form-error" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                <i class="fas fa-paper-plane"></i>
+                <span>Kirim Pesan</span>
+                <div class="btn-spinner" id="btnSpinner"></div>
+              </button>
+
+              <div class="form-success" id="formSuccess">
+                <i class="fas fa-check-circle"></i> Pesan berhasil dikirim! Terima kasih.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+          <polygon points="24,3 45,15 45,33 24,45 3,33 3,15" fill="var(--accent-dim)" stroke="var(--accent)" stroke-width="1.5"/>
+          <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="var(--accent)" font-size="13" font-family="Syne" font-weight="800">ZM</text>
+        </svg>
+        <span>Zhilan Maulana</span>
+      </div>
+      <p class="footer__copy">© 2026 Zhilan Maulana. Dibuat dengan <span class="text-accent">❤</span> dan banyak ☕</p>
+      <div class="footer__socials">
+        <a href="https://github.com/ZhilanMaulana" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/maulana-zhilan-54364140a?trk=contact-info" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/ngabmaull?igsh=d3BmNnpwM3I0aG5j" target="_blank" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== LIGHTBOX ========== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project Preview">
+    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox__content">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Close preview"><i class="fas fa-times"></i></button>
+      <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+      <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+      <img src="" alt="" class="lightbox__img" id="lightboxImg" />
+      <div class="lightbox__info">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Custom JS -->
+  <script src="../UTS/asset/js/script.js"></script>
+</body>
+</html>
